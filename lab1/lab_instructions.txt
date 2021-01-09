@@ -1,4 +1,4 @@
-1. Create a Kinesis data stream
+1. Create a Kinesis data stream - named CadabraOrders
 2. Configure on ec2 instance to configure Kinesis
 cd /etc/aws-kinesis
 sudo nano agent.json

@@ -14,7 +14,8 @@ The labs are done as a part of https://www.udemy.com/course/aws-big-data, a cour
 See Lab instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab2/lab_instruction.txt
 
 ## Lab 3
-Input: Python script saved on EC2 generates new log files which are read by Kinesis agent installed on EC2 and sends them to Kinesis Firehouse which in turn are saved in S3.
+Input: Python script saved on EC2 generates new log files which are read by Kinesis agent installed on EC2 and sends them to Kinesis Firehouse.
+Output: S3.
 
 ![option 1](https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab3/pics/option1.png)
 

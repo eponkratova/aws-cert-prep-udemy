@@ -1,0 +1,23 @@
+1. Create a Kinesis data stream
+2. Configure on ec2 instance to configure Kinesis
+cd /etc/aws-kinesis
+sudo nano agent.json
+Paste
+    {
+      "filePattern": "/var/log/cadabra/*.log",
+      "kinesisStream": "CadabraOrders",
+      "partitionKeyOption": "RANDOM",
+      "dataProcessingOptions": [
+         {
+            "optionName": "CSVTOJSON",
+            "customFieldNames": ["InvoiceNo", "StockCode", "Description", "Quantity", "InvoiceDate", "UnitPrice", "Customer", "Country"]
+         }
+      ]
+    }
+underneath "flows"
+Save and leave the editor
+3. Restart the agent
+sudo service aws-kinesis-agent restart
+4. Generate log files
+sudo ./LogGenerator.py
+To check the status, type tail -f /var/log/aws-kinesis-agent/aws-kinesis-agent.log

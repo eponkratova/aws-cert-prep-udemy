@@ -19,7 +19,7 @@ sudo nano agent.json
 If it is not us east, change firehouse.endpoint with your region, e.g. 
 "firehouse.endpoint": "firehouse.us-east-1.amazonaws.com"
 Change the ec2 IAM role with the role with Administrative right to avoid adding aws key directly
-Change filepatterns in agent.json to "/var/log/cadabra/*log"
+Change filepatterns in agent.json to "/var/log/cadabra/*.log"
 Change deliveryStram to your Kinesis stream, in my case "PurchaseLogs"
 Save the changes
 8. Start Kinesis agent with

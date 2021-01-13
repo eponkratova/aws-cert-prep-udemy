@@ -32,4 +32,5 @@ See Lab instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blob/
 
 ## Final outcome
 
+
 ![option 1](https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/option1.png)

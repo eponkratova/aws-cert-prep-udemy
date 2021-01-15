@@ -1,0 +1,28 @@
+dynamodb table - CadabraOrders, primary key CustomerID (num), sort key - OrderID (str)
+
+1. Create a dynamodb table
+2. Install boto3 lib on ec2
+sudo easy_install pip
+sudo pip install boto3
+3. Create the file with aws credentials so that boto3 reads from it
+pwd
+mkdir .aws
+cd .aws/
+nano credentials - to create a new file
+4. In the credentials file type
+[default]
+aws_access_key_id=
+aws_secret_access_key=
+5. Save the file and exit
+6. Create config file
+nano config
+[default]
+region=us-east-1
+7. Save and exit
+8. Go to the home directory and download the consumer script
+wget http://media.sundog-soft.com/AWSBigData/Consumer.py
+9. Make the script executable chmod a+x Consumer.py
+10. Run the script
+./Consumer.py
+11. Run the kinesis agent to send new data points
+sudo ./LogGenerator.py 10

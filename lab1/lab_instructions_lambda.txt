@@ -1,0 +1,8 @@
+lambda - ProcessOrders
+
+1. Create iam role to consume data from kinesis - CadabraOrders
+amazonkinesisreadonly
+amazondynamodbfullaccess
+2. Create a lambda function from scratch
+3. Add kinesis trigger
+4. Add the lambda script

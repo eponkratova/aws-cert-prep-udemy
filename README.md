@@ -9,6 +9,7 @@ Input: Python script saved on EC2 generates new log files which are read by Kine
 ![option 2](https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab1/pics/option2.png)
 
 See Lab instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab1/lab_instructions.txt
+Dynamodb setup https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab1/lab_instructions_dynamodb.txt
 
 ## Lab 2
 Input: Python script saved on EC2 generates new log files which are read by Kinesis agent installed on EC2 and sends them to Kinesis Firehouse.

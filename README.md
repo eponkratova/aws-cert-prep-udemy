@@ -9,7 +9,9 @@ Input: Python script saved on EC2 generates new log files which are read by Kine
 ![option 2](https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab1/pics/option2.png)
 
 See Lab instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab1/lab_instructions.txt
+
 Dynamodb setup https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab1/lab_instructions_dynamodb.txt
+
 Lambda setup https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab1/lab_instructions_lambda.txt
 
 ## Lab 2
@@ -19,6 +21,8 @@ Output: S3.
 ![option 1](https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab2/pics/option1.png)
 
 See Lab instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab2/lab_instruction.txt
+
+Added EMR instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab2/lab_instruction_emr.txt
 
 ## Lab 3
 

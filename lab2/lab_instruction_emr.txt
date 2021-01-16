@@ -1,0 +1,22 @@
+emr - CadabraRecs
+
+1. Create an EMR cluster
+2. Change the inbound security group to allow traffic on port 22
+3. Launch the master node and copy the existing recommender code
+cp /usr/lib/spark/examples/src/main/python/ml/als_example.py ./
+4. Create a directory in the hdfs system
+hadoop fs -mkdir -p /user/hadoop/data/mllib/als
+hadoop fs -copyFromLocal /usr/lib/spark/data/mllib/als/sample_movielens_ratings.txt /user/hadoop/data/mllib/als/sample_movielens_ratings.txt
+5. Run Spark
+spark-submit als_example.py
+sudo nano als_example.py
+6. Add the following line after the if _main block - after .getOrCreate()
+spark.sparkContext.setLogLevel("ERROR")
+7. Check that s3 - orderlogs - make the almost lower level of the s3 directory public
+8. Go to emr again
+sudo nano als_example.py
+9. Replace the part with the part in .txt file in this github folder
+Ctr + K to delete the lines
+Replace userId in the 'als = ALS(' part to customerId
+Replace movieId to itemId
+10. Run the script spark-submit als_example.py

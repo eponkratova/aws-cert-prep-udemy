@@ -1,0 +1,12 @@
+kinesis analytics - TransactionRateMonitor
+kinesis data stream - OrderRateAlarms
+lambda - TransactionRateAlarm
+SNS topic - CadabraAlarms
+
+1. Create streaming data source; add another kinesis data stream, and connect kinesis data stream to kinesis analytics - SOURCE_SQL_STREAM_001
+2. Add the query from the file in this github folder
+3. Add TransactionRateMonitor as a destination
+4. Create iam role for lambda ->>> AWSLambdaKinesisExecutionRole + AmazonSNSFullAccess + CloudWatchFullAccess + AWSLambdaBasicExecutionRole
+5. Create lambda function and add Kinesis data stream as trigger and kinesis cloudwatchlogs, sns as destination. Add the lambda python code from the file in this github folder. Change the timeout to 1m
+6. Set up SNS topic and create subscriptions in the SNS topic, e.g. email or mobile number. Copy the topic ARN and replace the part in the lambda code
+topic_arn = '<your topic here>'

@@ -28,6 +28,8 @@ Added EMR instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blo
 
 ![option 1](https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab3/pics/option1.png)
 
+See Lab instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab3/lab_instruction.txt
+
 ## Lab 4
 
 ![option 1](https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab4/pics/option1.png)

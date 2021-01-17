@@ -34,6 +34,8 @@ See Lab instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blob/
 
 ![option 1](https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab4/pics/option1.png)
 
+See Lab instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab4/lab_instruction.txt
+
 ## Lab 5
 
 ![option 1](https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab5/pics/option1.png)

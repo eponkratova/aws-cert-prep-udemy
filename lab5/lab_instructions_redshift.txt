@@ -1,0 +1,12 @@
+redshift - cadabra
+
+1. Create the iam role. Add AmazonS3ReadOnlyAccess, AWSGlueConsoleFullAccess
+2. Create redshift cluster
+3. Go to Editor to launch Redshift Spectrum
+4. Create an external schema
+Create external schema orderlog_schema from data catalog
+database '<yourgluecatalog, e.g. orderlogs>'
+iam_role '<arn of the policy you created in step1>'
+region 'us-east-1'
+5. Run the query
+select count(*) from orderlog_schema.<yourtablename>

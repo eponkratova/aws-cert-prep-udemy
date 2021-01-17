@@ -1,0 +1,4 @@
+quicksight - Cadabra-eka
+
+1. Create a QuickSight account
+2. Create a dashboard

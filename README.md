@@ -42,6 +42,8 @@ See Lab instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blob/
 
 See Athena Lab instructions at https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab5/lab_instructions_athena.txt
 
+See Redshift Lab at https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab5/lab_instructions_redshift.txt
+
 ## Final outcome
 
 

@@ -1,0 +1,5 @@
+crawler - order data >> orderlogs
+
+1. Add a crawler in glue
+2. Go to Athena
+SELECT count(*) FROM "orderlogs"."2021" ;

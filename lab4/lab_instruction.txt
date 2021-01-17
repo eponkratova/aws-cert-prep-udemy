@@ -1,0 +1,29 @@
+elasticsearch - cadabra; weblogs as Index
+firehouse - WebLogs
+lamda - LogTransform
+
+1. Log to the ec2 instance and download log files
+wget http://media.sundog-soft.com/AWSBigData/httpd.zip
+unzip httpd.zip
+pwd
+sudo mv httpd /var/log/httpd
+2. Create elastic search cluster
+3. Add kinesis firehouse delivery stream. Make sure you enable the lambda transformation to properly handle timestamps - use the blueprint kinesis-firehose-syslog-to-json. Choose Amazon Elasticsearch as a destination. 
+4. Go to the ec2 instance
+sudo nano /etc/aws-kinesis/agent.json
+
+{
+"filePattern": "/var/log/httpd/ssl_access*",
+"deliveryStream": "WebLogs",
+"initialPosition": "START_OF_FILE"
+}
+
+5. Restart kinesis-agent
+sudo service aws-kinesis-agent restart
+tail -f /var/log/aws-kinesis-agent/aws-kinesis-agent.log
+
+6. Grant access Kibana to Elasticsearch. Click Modify the access policy and copy the policy from the file in this git repository and add the updated policy after 'statement':[
+
+7. Click 'Kibana' link in the 'Overview' tab
+
+8. Once Kibana gets opened, add Index pattern

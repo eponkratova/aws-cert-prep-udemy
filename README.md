@@ -1,4 +1,4 @@
-# aws-cert-prep-udemy.
+# aws-cert-prep-udemy
 
 The labs are done as a part of https://www.udemy.com/course/aws-big-data, a course designed to prepare for the AWS certification
 

@@ -1,6 +1,6 @@
 # aws-cert-prep-udemy
 
-The labs are done as a part of https://www.udemy.com/course/aws-big-data, a course designed to prepare for the AWS certification
+The labs are done as a part of https://www.udemy.com/course/aws-big-data, a course designed to prepare for the AWS certification.
 
 ## Lab 1
 Input: Python script saved on EC2 generates new log files which are read by Kinesis agent installed on EC2 and sends them to Kinesis datastreams.

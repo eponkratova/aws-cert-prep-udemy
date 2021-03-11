@@ -15,7 +15,7 @@ Dynamodb setup https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/la
 Lambda setup https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab1/lab_instructions_lambda.txt
 
 ## Lab 2
-Input: Python script saved on EC2 generates new log files which are read by Kinesis agent installed on EC2 and sends them to Kinesis Firehouse.
+Input: Python script saved on EC2 generates new log files which are read by Kinesis agent installed on EC2 and sends them to Kinesis Firehouse
 Output: S3.
 
 ![option 1](https://github.com/eponkratova/aws-cert-prep-udemy/blob/master/lab2/pics/option1.png)
